@@ -11,7 +11,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Nav />}>
-          <Route index path="/posts" element={<Articles />} />
+          <Route exact path="/posts" element={<Articles />} />
           <Route exact path="/posts/:id" element={<Modal />} />
           <Route exact path="/users" element={<Users />} />
           <Route exact path="/photos" element={<Photos />} />
